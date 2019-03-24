@@ -1,0 +1,9 @@
+<!--pages/button/index.wxml-->
+<view class="container">
+  <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default button </button>
+  <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="primary"> primary buton </button>
+  <button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="warn"> warn button </button>
+  <button bindtap="setDisabled">Toggle disabled</button>
+  <button bindtap="setPlain">Toggle plain</button>
+  <button bindtap="setLoading">Toggle loading</button>
+</view>

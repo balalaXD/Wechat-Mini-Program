@@ -1,0 +1,34 @@
+<!--pages/musicPlayer/search/index.wxml-->
+
+<view class="container">
+  <view class="search-area">
+    <input bindinput="inputing" placeholder="Music" value="{{value}}" />
+    <button type="primary" size="mini" bindtap="search" loading="{{loading}}"> Search </button>
+  </view>
+
+  <view class="songlist" data-name="abc">
+    <block wx:for="{{list}}" wx:key="{{index}}">
+      <view class="songitem">
+      <!-- NOTICE you have to specify 'open-type' attr to switch tab -->
+      <!-- But wx.switchTab: url 不支持 queryString -->
+        <navigator url="../play/index"
+                   open-type="switchTab" bindtap="taptap" data-songid="{{item.songid}}"
+                   class="song-play">
+          <image src="{{item.albumpic_small}}" />
+          <view class="description">
+            <view class="song-title">
+              {{item.songname}} - {{item.singername}}
+            </view>
+            <view class="song-subtitle">
+              {{item.albumname}}
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </block>
+  </view>
+
+  <loading hidden="{{!loading}}">
+    Searching Music...
+  </loading>
+</view>

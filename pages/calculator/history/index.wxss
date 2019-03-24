@@ -1,0 +1,10 @@
+/* pages/calculator/history/index.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin-left: 50rpx;
+}

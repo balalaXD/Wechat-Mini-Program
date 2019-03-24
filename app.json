@@ -1,0 +1,77 @@
+{
+  "tabBar": {
+    "color": "#818181",
+    "backgroundColor": "white",
+    "selectedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/musicPlayer/index",
+        "text": "音乐列表",
+        "iconPath": "/public/images/music.png",
+        "selectedIconPath": "/public/images/music-s.png"
+      },
+      {
+        "pagePath": "pages/musicPlayer/play/index",
+        "iconPath": "/public/images/playing.png",
+        "selectedIconPath": "/public/images/playing-s.png",
+        "text": "正在播放"
+      },
+      {
+        "pagePath": "pages/musicPlayer/search/index",
+        "iconPath": "/public/images/search.png",
+        "selectedIconPath": "/public/images/search-s.png",
+        "text": "搜索"
+      }
+    ]
+  },
+  "pages": [
+    "pages/musicPlayer/index",
+    "pages/musicPlayer/play/index",
+    "pages/musicPlayer/search/index",
+    "pages/musicPlayer/list/index",
+    "pages/weather/index",
+    "pages/getSystemInfo/index",
+    "pages/getNetworkStatus/index",
+    "pages/getLocation/index",
+    "pages/recordAudio/index",
+    "pages/imageSelector/index",
+    "pages/phone/index",
+    "pages/GET/index",
+    "pages/video/index",
+    "pages/backgroundMusic/index",
+    "pages/audio/index",
+    "pages/showButtonMenu/index",
+    "pages/buttonMenu/index",
+    "pages/showModal/index",
+    "pages/modal/index",
+    "pages/showToast/index",
+    "pages/toast/index",
+    "pages/tranvelForm/index",
+    "pages/loading/index",
+    "pages/swiper/index",
+    "pages/picker/index",
+    "pages/form/index",
+    "pages/radios/index",
+    "pages/calculator/index",
+    "pages/calculator/history/index",
+    "pages/calc/index",
+    "pages/icons/index",
+    "pages/button/index",
+    "pages/slider/index",
+    "pages/flex/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "MiniProgram",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "Collecting Your Location. //"
+    }
+  }
+}

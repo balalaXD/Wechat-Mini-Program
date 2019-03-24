@@ -1,0 +1,7 @@
+<!--pages/calc/index.wxml-->
+<view class="container">
+  <input placeholder="augend" bindinput="bindAugendInput" type="number" />
+  <input placeholder="addend" bindinput="bindAddendInput" type="number" />
+  <button type="primary" bindtap="bindSum">Calculate</button>
+  <input wx:if="{{sum !== undefined}}" placeholder="sum" value="{{sum}}" disabled/>
+</view>

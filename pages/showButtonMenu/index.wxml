@@ -1,0 +1,5 @@
+<!--pagges/showButtonMenu/index.wxml-->
+
+<view class="section section__gap">
+  <button type="default" bindtap="showActionSheet">使用API显示底部菜单</button>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/picker/index.wxml-->
+
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">picker demo</text>
+  </view>
+  <view class="page__bd">
+    <view class="section">
+      <view class="section__title">Country Picker</view>
+      <picker bindchange="bindCountryChange" value="{{index}}" range="{{countries}}">
+        <view class="picker">
+          {{countries[index]}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">Date Picker</view>
+      <picker mode="date" value="{{date}}" start="2016-09-01" end="2018-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">Time Picker</view>
+      <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+        <view class="picker">
+          {{time}}
+        </view>
+      </picker>
+    </view>
+  </view>
+</view>

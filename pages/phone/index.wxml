@@ -1,0 +1,5 @@
+<!--pages/phone/index.wxml-->
+
+<view>
+  <text>Cause not available API, cancel this page</text>
+</view>

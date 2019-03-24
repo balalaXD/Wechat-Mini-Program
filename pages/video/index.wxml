@@ -1,0 +1,21 @@
+<!--pages/video/index.wxml-->
+
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">videos</text>
+  </view>
+  <view class="page__bd">
+    <view class="section section_gap">
+      <view class="body-view" style="text-align: center;">
+        <video id="videoPlayer" src="{{src}}" binderror="videoErrorCallback"
+               danmu-list="{{danmuList}}" enable-danmu danmu-btn
+               controls></video>
+      </view>
+    </view>
+
+    <view class="btn-area">
+      <input placeholder="Input danmu" bindblur="bindInputBlur" value="{{inputDanmu}}" />
+      <button bindtap="bindSendDanmu">Send danmu</button>
+    </view>
+  </view>
+</view>

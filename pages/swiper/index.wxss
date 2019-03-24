@@ -1,0 +1,10 @@
+/* pages/swiper/index.wxss */
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+}
+
+.btnGroup switch {
+  margin-left: 20rpx;
+}

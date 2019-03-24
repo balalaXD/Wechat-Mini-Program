@@ -1,0 +1,26 @@
+<!--pages/musicPlayer/list/index.wxml-->
+<scroll-view scroll-y="true">
+  <view class="board">
+    <image src="{{board}}" />
+  </view>
+
+  <view class="songlist">
+    <block wx:for="{{songlist}}" wx:key="song_id">
+      <view class="songitem">
+        <navigator url="../play/index" 
+                   open-type="switchTab" bindtap="taptap" data-songid="{{item.songid}}"
+                   class="song-play">
+            <image src="/public/images/play.png" />
+            <view class="description">
+              <view class="song-title">{{item.songname}}</view>
+              <view class="song-subtitle">{{item.singername}} - {{item.seconds}}
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </block>
+  </view>
+  <loading hidden="{{!loading}}">
+    Loading music...
+  </loading>
+</scroll-view>

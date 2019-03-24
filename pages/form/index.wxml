@@ -1,0 +1,21 @@
+<!--pages/form/index.wxml-->
+<view class="content">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section section_gap">
+      <view class="section__title">声音</view>
+      <switch name="voice" checked="{{open}}" />
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">音量</view>
+      <slider name="volume" show-value value="{{vol}}"></slider>
+    </view>
+    <view class="section">
+      <view class="section__title">配置名</view>
+      <input name="config_name" placeholder="输入配置名称" value="{{configName}}" />
+    </view>
+    <view class="btn-area">
+      <button formType="submit" type="primary">确定</button>
+      <button formType="reset">重置</button>
+    </view>
+  </form>
+</view>

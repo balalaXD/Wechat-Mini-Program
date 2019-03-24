@@ -1,0 +1,11 @@
+<!--pages/getLocation/index.wxml-->
+
+<view class="content">
+  <view class="page__hd">
+    <text class="page__title">获取当前位置</text>
+  </view>
+  <view class="section">
+    <button type="primary" bindtap="getMap">地图定位</button>
+    <button type="primary" bindtap="getLocation">获取所在位置</button>
+  </view>
+</view>

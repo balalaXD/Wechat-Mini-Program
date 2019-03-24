@@ -1,0 +1,5 @@
+<!--pages/showModal/index.wxml-->
+
+<view class="container">
+  <button type="primary" bindtap="tapToShowModal"> Show Modal </button>
+</view>

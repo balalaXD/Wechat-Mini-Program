@@ -1,0 +1,7 @@
+<!--pages/calculator/history/index.wxml-->
+<view class="container">
+  <button type="default" bindtap="handleClear">Clear</button>
+  <view wx:for="{{historys}}" wx:for-item="history" class="row">
+    {{history}}
+  </view>
+</view>

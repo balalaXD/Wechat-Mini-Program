@@ -1,0 +1,17 @@
+/* pages/form/index.wxss */
+
+.content {
+  margin: 40rpx;
+}
+
+.section_gap {
+  padding: 0 30rpx;
+}
+
+.btn-area {
+  padding: 0 30rpx;
+}
+
+button {
+  margin: 20rpx 0;
+}

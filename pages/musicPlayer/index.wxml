@@ -1,0 +1,14 @@
+<!--pages/musicPlayer/index.wxml-->
+
+<view class="container">
+  <view class="rank-list">
+    <block wx:for="{{ranks}}" wx:key="{{item.type}}">
+      <view class="rank-item">
+        <navigator url="./list/index?type={{item.type}}" class="text">
+          {{item.text}}
+        </navigator>
+        <view class="arrow" />
+      </view>
+    </block>
+  </view>
+</view>

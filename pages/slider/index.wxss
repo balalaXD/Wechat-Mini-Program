@@ -1,0 +1,9 @@
+/* pages/slider/index.wxss */
+
+.content {
+  margin: 40rpx;
+}
+
+view, slider {
+  margin: 40rpx 0;
+}

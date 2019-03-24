@@ -1,0 +1,41 @@
+<!--pages/modal/index.wxml-->
+
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">modal 模式对话框</text>
+  </view>
+  <view class="page__bd">
+    <modal title="退出应用" confirm-text="Yes" cancel-text="No" hidden="{{!exitAppModal}}"
+           bindconfirm="exitAppModalConfirm" bindcancel="exitAppModalCancel">
+      您是否真的要退出应用？
+    </modal>
+
+    <modal title="Form" hidden="{{!inputModal}}" no-cancel
+           bindconfirm="inputModalConfirm">
+      <view class="section">
+        <view class="section__title">What's your name?</view>
+        <input placeholder="Name" />
+      </view>
+      <view class="section">
+        <view class="section__title">Which country do you prefer? </view>
+        <checkbox-group name="region">
+          <label class="checkbox" wx:for="{{regions}}" wx:key="name">
+            <checkbox value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+          </label>
+        </checkbox-group>
+      </view>
+      <view class="section">
+        <view class="section__title">Travel Date</view>
+        <picker mode="date" name="date1" value="{{date}}" start="2016-09-01" end="2018-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+      </view>
+    </modal>
+    <view class="btn-area">
+      <button type="primary" bindtap="popupInputModal">Popup Input Modal</button>
+      <button type="default" bindtap="popupExitAppModal">Exit</button>
+    </view>
+  </view>
+</view>

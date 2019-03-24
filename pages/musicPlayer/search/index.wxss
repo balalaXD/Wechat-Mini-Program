@@ -1,0 +1,27 @@
+/* pages/musicPlayer/search/index.wxss */
+
+.search-area {
+  background: #f4f4f4;
+  padding: 1rem 0.5rem;
+}
+
+.search-area input {
+  background: #fff;
+  border-radius: 3px;
+  height: 2rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+}
+
+navigator {
+  display: flex;
+  padding: 20rpx;
+}
+
+image {
+  width: 100rpx;
+  height: 100rpx;
+  padding-right: 20rpx;
+}

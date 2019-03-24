@@ -1,0 +1,8 @@
+<!--pages/slider/index.wxml-->
+<view class="content">
+  <view class="section__title">Augend</view>
+  <slider min="0" max="1000" bindchange="bindAugendSlider" show-value/>
+  <view class="section__title">Addend</view>
+  <slider min="0" max="1000" bindchange="bindAddendSlider" show-value/>
+  <view class="section__title">SUM: {{ sum }}</view>
+</view>

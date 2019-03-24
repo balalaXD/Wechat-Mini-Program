@@ -1,0 +1,49 @@
+<!--pages/tranvelForm/index.wxml-->
+<view class="content">
+  <view class="loadingGroup">
+    <loading hidden="{{!pageLoading}}">Loading...</loading>
+    <loading hidden="{{!submitting}}">Submitting data...</loading>
+  </view>
+  <form bindsubmit="onFormSubmit" bindreset="onFormReset">
+    <view class="section">
+      <view class="section__title">Sex</view>
+      <radio-group name="sex" bindchange="handleRadioChange">
+        <label wx:for="{{sexes }}" wx:for-item="sex">
+          <radio value="{{sex}}" checked />{{sex}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="section">
+      <view class="section__title">Country</view>
+      <checkbox-group name="country" bindchange="handleCheckboxChange">
+        <label class="checkbox" wx:for="{{regions}}" wx:for-item="region">
+          <checkbox value="{{region.name}}" checked="{{region.checked}}" />{{region.value}}
+        </label>
+      </checkbox-group>
+    </view>
+    <view class="section">
+      <view class="section__title">Date</view>
+      <picker name="date" mode="date" value="{{date}}" start="2019-01-01" end="2019-12-31" bindchange="handleDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">Time</view>
+      <picker name="time" mode="time" value="{{time}}" start="08:00" end="10:00" bindchange="handleTimeChange">
+        <view class="picker">
+          {{time}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">Feedback</view>
+      <textarea name="feedback" style="height: 100rpx;" placeholder="Leave your comments here." value="{{feedback}}" />
+    </view>
+    <view class="btn-area">
+      <button formType="submit" type="primary">Submit</button>
+      <button formType="reset">Reset</button>
+    </view>
+  </form>
+</view>

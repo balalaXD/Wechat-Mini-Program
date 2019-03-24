@@ -1,0 +1,14 @@
+<!--pages/showToast/index.wxml-->
+
+<view class="page">
+  <view class="page__hd">
+    <text class="page_title">showtoast demo</text>
+  </view>
+  <view class="page__bd">
+    <view class="btn-area">
+      <button type="default" bindtap="showtoast1Tap">1.5 seonds default</button>
+      <button type="default" bindtap="showtoast2Tap">5 seconds</button>
+      <button type="default" bindtap="showtoast3Tap">success</button>
+    </view>
+  </view>
+</view>
